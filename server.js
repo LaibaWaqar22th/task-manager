@@ -9,9 +9,6 @@ app.use(express.json())
 
 app.get('/', (req, res) => {
     res.send("Welcome to the task manager api, navigate to '/users' or '/tasks' to see apis")
-        .catch(e => {
-            res.status(500).send(e)
-        })
 })
 
 app.post('/users', (req, res) => {
